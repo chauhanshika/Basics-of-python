@@ -1,0 +1,15 @@
+
+def lenght(a):
+    print(len(a))
+    
+lst=[]
+print("Press '$$$$' to save the elements ")
+
+while True:
+    ele=(input("Enter the elements: "))
+    if (ele=='$$$$'):
+        break
+    else:
+        lst.append(ele)
+    
+lenght(lst)
