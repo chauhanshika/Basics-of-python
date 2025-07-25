@@ -1,0 +1,10 @@
+def avg(a,b,c):
+    avg=(a+b+c)/3
+    print(avg)
+    
+a=int(input("Enter a "))
+b=int(input("Enter b "))
+c=int(input("Enter c "))
+print("The avg of the number is:")
+
+avg(a,b,c)
