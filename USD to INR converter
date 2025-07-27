@@ -1,0 +1,9 @@
+def usd_inr():
+
+    usd=float(input("Enter the amount in USD "))
+    inr=usd*86.46
+    print(f"The entered amount in INR is {inr:.2f}")
+
+print("WELCOME")
+
+usd_inr()
