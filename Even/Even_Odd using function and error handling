@@ -1,0 +1,21 @@
+def evenodd(num):
+    if(num==float):
+        print("Number must be an integer")
+   
+    if(num%2==0):
+        print("Number is even")
+        print("\n")
+        
+    else:
+        print("Number is odd")
+        print("\n")
+
+print("WELCOME")        
+while(True):
+
+    try:
+       evenodd(int(input("Enter the number ")))
+    except:
+       print("Enter a valid number")
+       print("\n")
+       
