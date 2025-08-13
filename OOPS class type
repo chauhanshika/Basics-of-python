@@ -1,0 +1,4 @@
+class Love:
+    pass
+mummy=Love()    
+print(type(mummy))
