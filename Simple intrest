@@ -1,0 +1,8 @@
+#calculate the simple intrest
+
+p=float(input("Enter the principle value(P):"))
+r=float(input("Enter the rate"))
+t=float(input("Enetr the time"))
+
+rslt=(p*r*t)/100
+print(rslt)
