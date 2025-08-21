@@ -1,0 +1,9 @@
+# Program to print even numbers in an exclusive range
+
+a = int(input("Enter start number: "))
+b = int(input("Enter end number: "))
+
+print(f"Even numbers between {a} and {b} (exclusive):")
+for i in range(a, b):   # 'b' is not included
+    if i % 2 == 0:
+        print(i)
