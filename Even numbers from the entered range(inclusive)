@@ -1,0 +1,12 @@
+# Program to print even numbers in inclusive range
+
+# Take input from the user
+a = int(input("Enter start number: "))
+b = int(input("Enter end number: "))
+
+print(f"Even numbers between {a} and {b} (inclusive):")
+
+# Loop from 'a' to 'b', and add +1 so that 'b' is included
+for i in range(a, b + 1):
+    if i % 2 == 0:   # check if number is even
+        print(i)
