@@ -1,0 +1,20 @@
+Sorting Data (ORDER BY):
+ORDER BY is used to arrange the result in ascending or descending order.
+By default, sorting is ascending (ASC).
+
+Examples:
+
+1. Sort by age (ascending)
+SELECT * FROM students ORDER BY age ASC;
+
+
+2. Sort by age (descending)
+SELECT * FROM students ORDER BY age DESC;
+
+
+3. Sort by name (A–Z)
+SELECT * FROM students ORDER BY student_name ASC;
+
+
+4. Sort by multiple columns
+SELECT * FROM students ORDER BY age DESC, student_name ASC;
