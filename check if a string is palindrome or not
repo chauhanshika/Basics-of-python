@@ -1,0 +1,11 @@
+# Program to check if a string is palindrome or not
+
+text = input("Enter a string: ")
+
+# Reverse the string
+rev_text = text[::-1]
+
+if text == rev_text:
+    print("It is a Palindrome")
+else:
+    print("It is Not a Palindrome")
