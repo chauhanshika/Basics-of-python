@@ -1,0 +1,16 @@
+num = int(input("Enter a number: "))
+
+i = 1
+sum_of_divisors = 0
+
+# check all divisors from 1 to num-1
+while i < num:
+    if num % i == 0:   # if i divides num completely
+        sum_of_divisors += i
+    i += 1
+
+# compare sum of divisors with original number
+if sum_of_divisors == num:
+    print(num, "is a Perfect Number.")
+else:
+    print(num, "is not a Perfect Number.")
