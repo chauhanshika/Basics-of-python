@@ -1,0 +1,17 @@
+lst=[]
+size=int(input("Enter the number of elements"))
+for i in range(size):
+    ele=int(input('Enter the elements: '))
+    lst.append(ele)
+print('The list entered by you is: ',lst)
+
+nth=int(input("Enter the value of ;n': "))
+
+lst.sort(reverse=True)
+
+print("The entered list in descending order is", lst)
+
+if nth <= len(lst):
+    print(f"The {nth} largest element is:", lst[nth-1])
+else:
+    print("Invalid value of n! It should be between 1 and" ,len(lst))
