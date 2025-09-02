@@ -1,0 +1,14 @@
+lst = []
+size = int(input("Enter the number of elements: "))
+for i in range(size):
+    ele = int(input('Enter the element: '))
+    lst.append(ele)
+
+print('The list entered by you is: ', lst)
+
+new = []
+for j in range(size):
+    if lst[j] not in new:
+        new.append(lst[j])
+
+print("List after removing duplicates: ", new)
