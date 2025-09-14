@@ -1,0 +1,27 @@
+# Program to check if the sum of digits is prime AND the number itself is even
+
+num = int(input("Enter a number: "))
+
+# function to calculate digit sum
+def digit_sum(n):
+    s = 0
+    while n > 0:
+        s += n % 10
+        n //= 10
+    return s
+
+# function to check prime
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+sum_digits = digit_sum(num)
+
+if num % 2 == 0 and is_prime(sum_digits):
+    print(num, "is Even and its digit sum", sum_digits, "is Prime.")
+else:
+    print(num, "doesn't satisfy both conditions.")
