@@ -1,0 +1,19 @@
+num = int(input("Enter a number: "))
+
+# Convert number to string for easy reversal
+original = str(num)
+reversed_num = original[::-1]
+
+# Check if palindrome
+if original == reversed_num:
+    # Calculate sum of digits
+    digit_sum = 0
+    for d in original:
+        digit_sum += int(d)
+
+    if digit_sum % 2 == 0:
+        print(num, "is a Palindrome and its digit sum is Even.")
+    else:
+        print(num, "is a Palindrome and its digit sum is Odd.")
+else:
+    print(num, "is not a Palindrome.")
