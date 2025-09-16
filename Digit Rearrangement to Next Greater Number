@@ -1,0 +1,30 @@
+def next_greater_number(num):
+    digits = list(str(num))  # convert number to list of digits
+    n = len(digits)
+
+    # Step 1: find first digit from right which is smaller than next digit
+    i = n - 2
+    while i >= 0 and digits[i] >= digits[i + 1]:
+        i -= 1
+
+    # If no such digit found, it means digits are in descending order
+    if i == -1:
+        return "Not Possible"
+
+    # Step 2: find the smallest digit greater than digits[i] on right side
+    j = n - 1
+    while digits[j] <= digits[i]:
+        j -= 1
+
+    # Step 3: swap digits[i] and digits[j]
+    digits[i], digits[j] = digits[j], digits[i]
+
+    # Step 4: reverse the sequence after position i
+    digits[i + 1:] = reversed(digits[i + 1:])
+
+    return int("".join(digits))
+
+
+# Taking input
+num = int(input("Enter a number: "))
+print("Next greater number:", next_greater_number(num))
