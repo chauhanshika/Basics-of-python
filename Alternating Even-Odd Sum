@@ -1,0 +1,11 @@
+num = input("Enter a number: ")
+result = 0
+
+for i in range(len(num)):
+    digit = int(num[i])
+    if (i + 1) % 2 == 0:  # even position
+        result += digit
+    else:  # odd position
+        result -= digit
+
+print("Alternating sum:", result)
