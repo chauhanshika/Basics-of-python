@@ -1,0 +1,13 @@
+def digital_root(n):
+    while n > 9:  # keep summing digits until single digit
+        n = sum(int(d) for d in str(n))
+    return n
+
+num = int(input("Enter a number: "))
+root = digital_root(num)
+power = len(str(num))
+result = root ** power
+
+print("Digital Root:", root)
+print("Number of digits:", power)
+print("Result:", result)
