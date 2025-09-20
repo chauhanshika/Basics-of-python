@@ -1,0 +1,11 @@
+def is_binary_palindrome(num):
+    binary = bin(num)[2:]  # convert to binary (remove '0b')
+    return binary == binary[::-1]
+
+num = int(input("Enter a number: "))
+binary = bin(num)[2:]
+
+if is_binary_palindrome(num):
+    print(f"Binary of {num} is {binary} → Palindrome ✅")
+else:
+    print(f"Binary of {num} is {binary} → Not Palindrome ❌")
