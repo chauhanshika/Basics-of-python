@@ -1,0 +1,18 @@
+print("✨ Welcome to the Lucky Name Generator! ✨")
+
+name = input("Enter your name: ")
+
+# Step 1: Remove spaces and make lowercase
+clean_name = name.replace(" ", "").lower()
+
+# Step 2: Calculate lucky score (sum of letters' positions)
+score = 0
+for letter in clean_name:
+    if letter.isalpha():  # only letters (ignore symbols/numbers)
+        score += ord(letter) - 96  # 'a' = 1, 'b' = 2, ...
+
+# Step 3: Reduce the score to a single lucky digit
+while score > 9:
+    score = sum(int(digit) for digit in str(score))
+
+print(f"🌈 Your lucky number for the name '{name}' is: {score} 🎉")
