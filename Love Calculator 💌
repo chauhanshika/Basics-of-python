@@ -1,0 +1,8 @@
+import random
+
+print("💞 Welcome to the Love Calculator 💞")
+name1 = input("Enter your name: ")
+name2 = input("Enter your partner's name: ")
+
+love_score = random.randint(50, 100)
+print(f"💘 The love compatibility between {name1} and {name2} is {love_score}% ❤️")
