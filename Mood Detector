@@ -1,0 +1,15 @@
+#Mood Detector
+
+print("Welcome to Mood Detector!")
+mood = input("How are you feeling today? ").lower()
+
+if "happy" in mood:
+    print("😄 Yay! Keep smiling!")
+elif "sad" in mood:
+    print("😢 It’s okay, better days are coming.")
+elif "angry" in mood:
+    print("😠 Take a deep breath and relax.")
+elif "bored" in mood:
+    print("😴 Try listening to your favorite music!")
+else:
+    print("🤔 Hmm... that’s interesting!")
