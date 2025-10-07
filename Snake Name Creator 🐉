@@ -1,0 +1,8 @@
+import random
+
+adjectives = ["Crazy", "Silent", "Fierce", "Clever", "Wild", "Shadow"]
+animals = ["Python", "Tiger", "Eagle", "Panther", "Wolf", "Cobra"]
+
+name = input("Enter your first name: ")
+username = random.choice(adjectives) + name.capitalize() + random.choice(animals)
+print(f"🔥 Your cool gamer name is: {username}")
