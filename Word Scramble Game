@@ -1,0 +1,16 @@
+import random
+
+words = ["python", "college", "coding", "future", "PSIT", "science", "anaconda"]
+
+word = random.choice(words)
+scrambled = ''.join(random.sample(word, len(word)))
+
+print("Welcome to the Word Scramble Game!")
+print("Unscramble this word:", scrambled)
+
+guess = input("Your guess: ").lower()
+
+if guess == word:
+    print("🎉 Correct! You’re awesome!")
+else:
+    print(f"❌ Oops! The correct word was '{word}'.")
