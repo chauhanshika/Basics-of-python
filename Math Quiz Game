@@ -1,0 +1,19 @@
+import random
+
+print("🧠 Welcome to the Math Quiz!")
+score = 0
+
+for i in range(5):
+    num1 = random.randint(1, 10)
+    num2 = random.randint(1, 10)
+    answer = num1 + num2
+    print(f"\nQuestion {i+1}: {num1} + {num2} = ?")
+    user = int(input("Your answer: "))
+
+    if user == answer:
+        print("✅ Correct!")
+        score += 1
+    else:
+        print(f"❌ Wrong! The correct answer is {answer}.")
+
+print(f"\n🏁 Quiz Over! Your Score: {score}/5")
