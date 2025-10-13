@@ -1,0 +1,13 @@
+import random
+
+compliments = [
+    "You’re amazing! 🌟",
+    "You have a beautiful smile 😊",
+    "You’re super talented 💪",
+    "You make everything better 💖",
+    "You’re doing great! Keep it up 👍"
+]
+
+print("💬 Your compliment for today:")
+print(random.choice(compliments))
+
