@@ -1,0 +1,8 @@
+import time
+
+print("🕒 Digital Clock (Press Ctrl + C to stop)\n")
+
+while True:
+    current_time = time.strftime("%H:%M:%S")
+    print(current_time, end="\r")
+    time.sleep(1)
