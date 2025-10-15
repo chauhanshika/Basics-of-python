@@ -1,0 +1,13 @@
+emojis = {
+    "happy": "😊",
+    "sad": "😢",
+    "angry": "😡",
+    "tired": "😴",
+    "love": "❤️",
+    "confused": "🤔"
+}
+
+print("💬 Emoji Mood Translator")
+word = input("Type your mood (happy/sad/angry/etc.): ").lower()
+
+print("Your emoji:", emojis.get(word, "🤷‍♀️ (I don’t know that one yet!)"))
