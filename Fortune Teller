@@ -1,0 +1,15 @@
+import random
+
+fortunes = [
+    "✨ You’ll achieve something big soon!",
+    "💖 A surprise message will make you smile.",
+    "🌈 Luck is coming your way!",
+    "🔥 You’ll learn a new skill this week.",
+    "🌻 Stay patient — good things take time."
+]
+
+print("🔮 Welcome to the Fortune Teller!")
+input("Think about your question and press Enter...")
+
+print("\nYour fortune says:")
+print(random.choice(fortunes))
