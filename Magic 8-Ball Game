@@ -1,0 +1,14 @@
+import random
+
+answers = [
+    "Yes, definitely!",
+    "No way!",
+    "Maybe, who knows?",
+    "Ask again later...",
+    "It’s looking good!",
+    "I don’t think so.",
+]
+
+print("🎱 Magic 8-Ball")
+input("Ask your question and press Enter... ")
+print("🌀", random.choice(answers))
