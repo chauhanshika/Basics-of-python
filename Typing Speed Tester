@@ -1,0 +1,19 @@
+import time
+
+print("⌨️ Typing Speed Test")
+text = "Python makes coding fun and creative!"
+print("\nType this sentence exactly as shown:")
+print(text)
+
+input("Press Enter when ready...")
+start = time.time()
+typed = input("\nStart typing: ")
+end = time.time()
+
+time_taken = round(end - start, 2)
+speed = len(typed.split()) / (time_taken / 60)
+
+if typed == text:
+    print(f"⏱ Great! You typed at {speed:.2f} words per minute.")
+else:
+    print(f"⚠ You made a mistake. Try again! ({speed:.2f} WPM)")
