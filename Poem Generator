@@ -1,0 +1,19 @@
+import random
+
+lines1 = [
+    "The sun sets in golden hue,",
+    "Stars whisper secrets in the blue,",
+    "Raindrops dance upon the leaf,",
+    "Dreams fly gently, soft and brief,"
+]
+
+lines2 = [
+    "Your heart knows what’s meant to be.",
+    "Tomorrow brings new light to see.",
+    "In silence, peace will come to you.",
+    "The sky sings softly, clear and true."
+]
+
+print("🪶 Your random poem:")
+print(random.choice(lines1))
+print(random.choice(lines2))
