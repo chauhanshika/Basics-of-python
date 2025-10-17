@@ -1,0 +1,12 @@
+mood = input("Describe your mood in one word: ").lower()
+
+if "lazy" in mood or "sleepy" in mood:
+    print("🌧 It feels like a rainy day.")
+elif "energetic" in mood:
+    print("☀️ Feels like sunshine!")
+elif "romantic" in mood:
+    print("🌦 Cloudy skies and soft breeze vibes 💕")
+elif "bored" in mood:
+    print("🌫 A foggy day with no plans, huh?")
+else:
+    print("🌈 Hard to say — maybe a mix of sunshine and clouds!")
