@@ -1,0 +1,12 @@
+import random
+
+print("💎 Welcome to the Treasure Hunt!")
+boxes = [1, 2, 3]
+treasure = random.choice(boxes)
+
+choice = int(input("Choose a box (1, 2, or 3): "))
+
+if choice == treasure:
+    print("🎉 You found the treasure!")
+else:
+    print("💨 Empty box! The treasure was in Box", treasure)
