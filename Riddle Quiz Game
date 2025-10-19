@@ -1,0 +1,18 @@
+print("🧩 Welcome to the Riddle Quiz!")
+riddles = {
+    "What has to be broken before you can use it?": "egg",
+    "I’m tall when I’m young, and short when I’m old. What am I?": "candle",
+    "What month has 28 days?": "all",
+}
+
+score = 0
+for question, answer in riddles.items():
+    print("\n🤔", question)
+    guess = input("Your answer: ").lower()
+    if guess == answer:
+        print("✅ Correct!")
+        score += 1
+    else:
+        print(f"❌ Wrong! Answer is '{answer}'.")
+
+print(f"\n🎯 Final Score: {score}/{len(riddles)}")
