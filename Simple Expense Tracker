@@ -1,0 +1,26 @@
+expenses = {}
+
+while True:
+    print("\n💸 Expense Tracker Menu")
+    print("1. Add Expense")
+    print("2. View Expenses")
+    print("3. Exit")
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        item = input("Enter item name: ")
+        cost = float(input("Enter amount (in ₹): "))
+        expenses[item] = cost
+        print("✅ Added successfully!")
+    elif choice == "2":
+        print("\n🧾 Your Expenses:")
+        total = 0
+        for i, (item, cost) in enumerate(expenses.items(), 1):
+            print(f"{i}. {item} - ₹{cost}")
+            total += cost
+        print("💰 Total Spent: ₹", total)
+    elif choice == "3":
+        print("👋 Goodbye!")
+        break
+    else:
+        print("❌ Invalid input!")
