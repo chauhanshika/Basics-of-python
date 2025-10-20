@@ -1,0 +1,8 @@
+import time
+
+reminder = input("Enter your reminder: ")
+delay = int(input("After how many seconds should I remind you? "))
+
+print("⏳ Timer started...")
+time.sleep(delay)
+print("\n🔔 Reminder:", reminder)
