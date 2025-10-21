@@ -1,0 +1,30 @@
+def add_note():
+    note = input("Write your note: ")
+    with open("notes.txt", "a") as file:
+        file.write(note + "\n")
+    print("✅ Note saved!")
+
+def view_notes():
+    try:
+        with open("notes.txt", "r") as file:
+            print("\n📘 Your Notes:\n")
+            print(file.read())
+    except FileNotFoundError:
+        print("⚠️ No notes found!")
+
+while True:
+    print("\n🗒️ Notes App Menu")
+    print("1. Add Note")
+    print("2. View Notes")
+    print("3. Exit")
+    ch = input("Choose an option: ")
+
+    if ch == "1":
+        add_note()
+    elif ch == "2":
+        view_notes()
+    elif ch == "3":
+        print("👋 Exiting Notes App...")
+        break
+    else:
+        print("❌ Invalid choice!")
