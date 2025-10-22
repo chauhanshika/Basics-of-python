@@ -1,0 +1,11 @@
+import random
+
+names = ["Anshika", "Riya", "Aarav", "Kabir", "Meera"]
+places = ["Lucknow", "Delhi", "Jaipur", "Goa", "Shimla"]
+activities = ["found a secret map", "started coding", "met a talking cat", "built a robot", "won a competition"]
+
+name = random.choice(names)
+place = random.choice(places)
+activity = random.choice(activities)
+
+print(f"📖 Once upon a time, {name} went to {place} and {activity}. It changed their life forever! ✨")
