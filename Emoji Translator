@@ -1,0 +1,13 @@
+words_to_emoji = {
+    "happy": "😊",
+    "sad": "😢",
+    "love": "❤️",
+    "angry": "😡",
+    "food": "🍕",
+    "sleep": "😴"
+}
+
+text = input("Enter a sentence: ").lower().split()
+translated = [words_to_emoji.get(word, word) for word in text]
+
+print(" ".join(translated))
