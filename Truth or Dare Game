@@ -1,0 +1,26 @@
+import random
+
+truths = [
+    "What’s your most embarrassing moment?",
+    "Who was your first crush?",
+    "Have you ever cheated in an exam?",
+    "What is your biggest fear?",
+    "What’s a secret you’ve never told anyone?"
+]
+
+dares = [
+    "Sing your favorite song 🎤",
+    "Do 10 push-ups 💪",
+    "Speak in a funny accent for 1 minute 😂",
+    "Dance without music 💃",
+    "Compliment 3 people around you 💖"
+]
+
+choice = input("Choose (Truth/Dare): ").lower()
+
+if choice == "truth":
+    print("🧠 Truth:", random.choice(truths))
+elif choice == "dare":
+    print("🔥 Dare:", random.choice(dares))
+else:
+    print("❌ Invalid choice!")
