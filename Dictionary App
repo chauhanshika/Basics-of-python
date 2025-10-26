@@ -1,0 +1,10 @@
+dictionary = {
+    "python": "A powerful programming language 🐍",
+    "data": "Information stored for analysis 📊",
+    "algorithm": "Step-by-step procedure to solve a problem ⚙️",
+    "variable": "A container to store data 💾",
+    "function": "A block of reusable code 🧩"
+}
+
+word = input("Enter a word to search: ").lower()
+print(dictionary.get(word, "❌ Word not found!"))
