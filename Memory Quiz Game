@@ -1,0 +1,13 @@
+import time
+import random
+
+words = ["apple", "river", "mountain", "python", "dream", "flower", "mirror"]
+chosen = random.sample(words, 3)
+print("🧠 Memorize these words:", chosen)
+
+time.sleep(5)
+print("\n" * 50)  # Clears screen visually
+answers = input("Type the words you remember (space separated): ").lower().split()
+
+correct = len(set(chosen) & set(answers))
+print(f"✅ You remembered {correct}/3 correctly!")
