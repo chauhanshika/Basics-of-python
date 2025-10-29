@@ -1,0 +1,6 @@
+import random
+
+colors = ["Red ❤️", "Blue 💙", "Green 💚", "Yellow 💛", "Purple 💜", "Orange 🧡", "Pink 💖"]
+
+input("Press Enter to know your lucky color of the day 🎨... ")
+print("Your lucky color is:", random.choice(colors))
