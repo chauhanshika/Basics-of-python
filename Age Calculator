@@ -1,0 +1,15 @@
+from datetime import date
+
+birth_year = int(input("Enter birth year: "))
+birth_month = int(input("Enter birth month: "))
+birth_day = int(input("Enter birth day: "))
+
+today = date.today()
+birth = date(birth_year, birth_month, birth_day)
+age_days = (today - birth).days
+
+years = age_days // 365
+months = (age_days % 365) // 30
+days = (age_days % 365) % 30
+
+print(f"🎉 You are {years} years, {months} months, and {days} days old!")
