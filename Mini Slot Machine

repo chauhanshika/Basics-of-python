@@ -1,0 +1,16 @@
+import random
+
+symbols = ["🍒", "🍋", "🍇", "🍉", "⭐", "💎"]
+
+print("🎰 Welcome to the Mini Slot Machine!")
+input("Press Enter to spin... ")
+
+slot = [random.choice(symbols) for _ in range(3)]
+print(" | ".join(slot))
+
+if len(set(slot)) == 1:
+    print("🏆 JACKPOT! All symbols match!")
+elif len(set(slot)) == 2:
+    print("😎 Nice! Two symbols match!")
+else:
+    print("💨 Better luck next time!")
