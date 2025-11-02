@@ -1,0 +1,21 @@
+planner = {}
+
+while True:
+    print("\n🗓️ Daily Planner Menu:")
+    print("1️⃣ Add task\n2️⃣ View tasks\n3️⃣ Exit")
+    choice = input("Enter choice: ")
+
+    if choice == '1':
+        time = input("Enter time (e.g., 10:00 AM): ")
+        task = input("Enter task: ")
+        planner[time] = task
+        print("✅ Task added!")
+    elif choice == '2':
+        print("\n🕒 Your Schedule for Today:")
+        for t, task in sorted(planner.items()):
+            print(f"{t} → {task}")
+    elif choice == '3':
+        print("👋 Planner closed!")
+        break
+    else:
+        print("❌ Invalid option!")
