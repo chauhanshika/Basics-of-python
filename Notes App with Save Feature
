@@ -1,0 +1,21 @@
+filename = "notes.txt"
+
+while True:
+    print("\n📝 Notes App Menu:")
+    print("1️⃣ Write Note\n2️⃣ View Notes\n3️⃣ Exit")
+    choice = input("Enter choice: ")
+
+    if choice == '1':
+        note = input("Write your note: ")
+        with open(filename, "a") as f:
+            f.write(note + "\n")
+        print("✅ Note saved!")
+    elif choice == '2':
+        with open(filename, "r") as f:
+            print("\n📘 Your Notes:")
+            print(f.read())
+    elif choice == '3':
+        print("👋 Goodbye!")
+        break
+    else:
+        print("❌ Invalid choice!")
