@@ -1,0 +1,5 @@
+u = input("Enter username: ")
+if len(u) >= 5 and u.isalnum():
+    print("✅ Valid username")
+else:
+    print("❌ Invalid username")
