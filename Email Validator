@@ -1,0 +1,18 @@
+import re
+
+def validate_email(email):
+    pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+    if not re.match(pattern, email):
+        return "❌ Invalid email format"
+    if email.count('@') != 1:
+        return "❌ More than one '@' found"
+    if " " in email:
+        return "❌ Email contains spaces"
+    if email.startswith('@') or email.endswith('@'):
+        return "❌ '@' cannot be at start or end"
+    if ".." in email:
+        return "❌ Double dots not allowed"
+    return "✅ Valid Email"
+
+email = input("Enter your email: ")
+print(validate_email(email))
