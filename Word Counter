@@ -1,0 +1,2 @@
+text = input("Enter text: ")
+print("Word count:", len(text.split()))
